@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.creativeapps.calci.MainActivity">
+
+
+    <!--Create EditTexts with inputType number|numberDecimal|numberSigned to accept all number-->
+
+    <EditText
+        android:id="@+id/editTextNu1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:ems="10"
+        android:inputType="number|numberDecimal|numberSigned" />
+
+    <EditText
+        android:id="@+id/editTextNu2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editTextNu1"
+        android:layout_alignRight="@+id/editTextNu1"
+        android:layout_below="@+id/editTextNu1"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:inputType="number|numberDecimal|numberSigned" />
+
+    <!--Created By Ashim -->
+
+    <Button
+        android:id="@+id/buttonAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextNu2"
+        android:layout_alignStart="@+id/editTextNu2"
+        android:layout_below="@+id/editTextNu2"
+        android:layout_marginTop="97dp"
+        android:text="@string/addSymbol"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/buttonSub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/buttonAdd"
+        android:layout_alignEnd="@+id/editTextNu2"
+        android:layout_alignRight="@+id/editTextNu2"
+        android:text="@string/subSymbol"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/buttonRe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonAdd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:text="@string/rem"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/buttonMult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonAdd"
+        android:layout_alignStart="@+id/buttonAdd"
+        android:layout_below="@+id/buttonRe"
+        android:layout_marginTop="16dp"
+        android:text="X"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/buttonDiv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonSub"
+        android:layout_alignStart="@+id/buttonSub"
+        android:layout_alignTop="@+id/buttonMult"
+        android:text="@string/divSymbol"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/textViewRes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextNu2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:textSize="30sp"
+        />
+</RelativeLayout>

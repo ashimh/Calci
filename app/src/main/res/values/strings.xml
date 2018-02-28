@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Calci</string>
+    <string name="addSymbol">+</string>
+    <string name="subSymbol">-</string>
+    <string name="rem">REM</string>
+    <string name="divSymbol">/</string>
+</resources>
