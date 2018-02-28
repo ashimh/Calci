@@ -94,7 +94,7 @@ public class MainActivity extends AppCompatActivity {
                 resultDouble = a + b;
                 tvResult.setText(String.valueOf(resultDouble));
             } else {
-                val1 = Integer.parseInt(etNUM1.getText().toString()); // Assigned value to val1 (Integer)
+                val1 = Integer.parseInt(etNUM1.getText().toString()); // Assigned value to val1 (Integer )
                 val2 = Integer.parseInt(etNUM2.getText().toString());
                 resultInt = val1 + val2;
                 tvResult.setText(String.valueOf(resultInt));
